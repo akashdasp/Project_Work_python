@@ -2,6 +2,7 @@ CarryOn="y"
 agelist=[]
 namelist=[]
 hourslist=[]
+zipped=[]
 total_hours=0
 number_student=0
 while CarryOn=='y':
@@ -41,3 +42,5 @@ while CarryOn=='y':
     if number_student==10:
         print(avg)
     CarryOn=input("Press Y to Continue or press N").lower()
+zipped=zip(namelist,agelist,hourslist)
+print(list(zipped))
